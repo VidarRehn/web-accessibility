@@ -1,0 +1,161 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Red Hat Text', Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .image {
+        height: 250px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .heading {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    h1 {
+        font-family: 'Dosis', Verdana, sans-serif;
+        font-size: 35px;
+    }
+
+    h2 {
+        font-family: 'Dosis', Verdana, sans-serif;
+        font-size: 25px;
+        font-weight: 300;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .definitions {
+        @media (min-width: 650px) {
+            flex-direction: row;
+        }
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > * {
+            height: 250px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            justify-content: center;
+
+            h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                width: 60%;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .icon {
+            font-size: 50px;
+            color: #294368;
+            margin-bottom: 20px;
+        }
+
+        .what-is-accessibility {
+            background-color: #F5DBBF;
+            text-align: center;
+
+            > * {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .digital-accessibility {
+            background-color: #F3964A;
+
+            > * {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    .how-to {
+        @media (min-width: 650px) {
+            flex-direction: row;
+        }
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > * {
+            height: 400px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 20px;
+
+            h3 {
+                width: 80%;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                margin-bottom: 20px;
+            }
+
+            li {
+                font-size: 14px;
+            }
+        }
+
+        .accessibility {
+            background-color: #B94F48;
+            color: white;
+        }
+
+        .for-designers {
+            background-color: #E9F1F5;
+        }
+    }
+}
+
+footer {
+    height: 120px;
+    background-color: #28488C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
