@@ -22,6 +22,12 @@ header .image {
   height: 250px;
 }
 
+@media (min-width: 650px) {
+  header .image {
+    height: 350px;
+  }
+}
+
 header .image img {
   max-width: 100%;
   max-height: 100%;
@@ -37,10 +43,22 @@ header h1 {
   font-size: 35px;
 }
 
+@media (min-width: 650px) {
+  header h1 {
+    font-size: 40px;
+  }
+}
+
 header h2 {
   font-family: 'Dosis', Verdana, sans-serif;
   font-size: 25px;
   font-weight: 300;
+}
+
+@media (min-width: 650px) {
+  header h2 {
+    font-size: 30px;
+  }
 }
 
 main {
@@ -99,15 +117,33 @@ main .definitions > * {
           justify-content: center;
 }
 
+@media (min-width: 650px) {
+  main .definitions > * {
+    height: 500px;
+  }
+}
+
 main .definitions > * h3 {
   font-size: 18px;
   margin-bottom: 10px;
+}
+
+@media (min-width: 650px) {
+  main .definitions > * h3 {
+    font-size: 30px;
+  }
 }
 
 main .definitions > * p {
   width: 60%;
   font-size: 14px;
   margin-bottom: 10px;
+}
+
+@media (min-width: 650px) {
+  main .definitions > * p {
+    font-size: 22px;
+  }
 }
 
 main .definitions .icon {
@@ -193,15 +229,33 @@ main .how-to > * {
   padding: 20px;
 }
 
+@media (min-width: 650px) {
+  main .how-to > * {
+    height: 600px;
+  }
+}
+
 main .how-to > * h3 {
   width: 80%;
   font-size: 18px;
   margin-bottom: 10px;
 }
 
+@media (min-width: 650px) {
+  main .how-to > * h3 {
+    font-size: 30px;
+  }
+}
+
 main .how-to > * p {
   font-size: 14px;
   margin-bottom: 10px;
+}
+
+@media (min-width: 650px) {
+  main .how-to > * p {
+    font-size: 22px;
+  }
 }
 
 main .how-to > * ul {
